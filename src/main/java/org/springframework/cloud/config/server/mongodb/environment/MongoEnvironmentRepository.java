@@ -52,8 +52,8 @@ public class MongoEnvironmentRepository implements EnvironmentRepository {
 	private static final String DEFAULT_PROFILE = null;
 	private static final String DEFAULT_LABEL = null;
 
-	private MongoTemplate mongoTemplate;
-	private MapFlattener mapFlattener;
+	private final MongoTemplate mongoTemplate;
+	private final MapFlattener mapFlattener;
 
 	public MongoEnvironmentRepository(MongoTemplate mongoTemplate) {
 		this.mongoTemplate = mongoTemplate;
